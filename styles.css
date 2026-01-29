@@ -21,9 +21,15 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+h1, .brand-name {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+h2, .hero-title {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   background: var(--color-bg);
   color: var(--color-text);
   line-height: 1.75;
@@ -76,6 +82,33 @@ a:hover { color: var(--color-secondary); }
   height: 44px;
   border-radius: 10px;
   flex-shrink: 0;
+  box-shadow: 0 2px 12px 0 rgba(6,182,212,0.10);
+  background: #fff;
+}
+.logo.large {
+  width: 88px;
+  height: 88px;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+}
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2px;
+  box-shadow: 0 2px 12px 0 rgba(6,182,212,0.10);
+}
+.hero-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-logo {
+  margin-bottom: 1.5rem;
 }
 .brand-name {
   margin: 0;
